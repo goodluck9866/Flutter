@@ -35,6 +35,12 @@ $cur_page = basename($_SERVER['PHP_SELF']);
               <p>Pending Orders</p>
             </a>
           </li>
+             <li class="nav-item <?php if($cur_page == "OrdersList.php"){echo " active";}?>">
+            <a class="nav-link" href="../Pages/OrdersList.php">
+              <i class="material-icons">library_books</i>
+              <p>SORTED Orders</p>
+            </a>
+          </li>
           
           <li class="nav-item <?php if($cur_page == "SuppliersList.php"){echo " active";}?>">
             <a class="nav-link" href="../Pages/SuppliersList.php">
